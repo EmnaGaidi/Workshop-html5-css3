@@ -1,0 +1,62 @@
+.top {
+  background-image: url(haut.png);
+  height: 60px;
+}
+.var {
+  background-image: url(background.png);
+  width: 16cm;
+  height: 6cm;
+  margin: auto;
+}
+#logo {
+  width: 2cm;
+}
+.navbar {
+  width: 16cm;
+  height: 1cm;
+  background-color: brown;
+  position: absolute;
+  top: 7cm;
+  justify-content: center;
+  display: flex;
+}
+button {
+  padding: 0;
+  background: transparent;
+  padding: 17px 32px;
+  border: none;
+  color: white;
+}
+button:hover {
+  background-color: black;
+}
+#first_button {
+  display: inline-block;
+}
+#first_button img {
+  width: 0.7cm;
+  height: 0.5cm;
+}
+table {
+  width: 30%;
+  margin: auto;
+}
+table tr td img {
+  width: 4cm;
+  height: 4cm;
+}
+.rouge {
+  color: rgb(167, 29, 29);
+}
+#next {
+  text-decoration: none;
+  font-weight: bold;
+}
+#final_text {
+  font-size: xx-small;
+  text-align: center;
+}
+.bottom {
+  background-image: url(bas.png);
+  height: 60px;
+}
