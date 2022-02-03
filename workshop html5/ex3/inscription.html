@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription en licence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: #f7efe8;
+        }
+        #f1,#f2{
+            border: inset;
+            background-color: #fff;
+            margin-left: 5cm;
+            margin-right: 5cm;
+            border-radius: 10px;
+        }
+        input :invalid{
+         border: red solid 3px;
+        }
+        input, textarea{
+            border-radius: 5px;
+            outline-color: rgb(224, 142, 142);
+            position: relative;
+        }
+        i{
+            position: absolute;
+        }
+        .fa-user{
+            left: 58%;
+        }
+        .fa-envelope{
+            left: 58%;
+        }
+        .bouton{
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 align="center">Inscription en licence</h1>
+    <form action="licence.html" align="center">
+        <div id="f1">
+            <h3 align="center">Informations personnelles</h3>
+            <label for="nom">Votre nom: </label><input type="text" name="nom" placeholder="votre nom?"><i class="far fa-user"></i><br><br>
+            <label for="prenom">Votre prénom: </label><input type="text" name="prenom" placeholder="votre prénom?"><br><br>
+            <label for="age">Votre &acirc;ge: </label><input type="number" name="age" placeholder="votre age?" min="0"><br><br>
+            <label for="date">Votre date de naissance: </label><input type="date" name="date"><br><br>
+            <label for="adresse">Votre adresse: </label><textarea name="adresse"  cols="30" rows="10" placeholder="votre adresse?"></textarea><br><br>
+            <label for="url">Votre url: </label><input type="url" name="url" placeholder="votre url?"><br><br>
+            <label for="email">Votre email: </label><input type="email" name="email" required placeholder="votre email?"><i class="fas fa-envelope"></i><br><br>
+            <label for="password">Mot de passe: </label><input type="password" name="password" required placeholder="votre mot de passe?"><br><br>
+        <label for="passwordrepeat">Retapez votre mot de passe: </label><input type="password" name="passwordrepeat" required placeholder="votre mot de passe?"><br>
+    </div>
+        <div id="f2">
+            <h3 align="center">Gestion des groupes et des options</h3>
+            <label for="groupe">Votre groupe: </label><input type="radio" name="groupe" value="groupe1" checked>Groupe1<input type="radio" name="groupe" value="groupe2">Groupe2<input type="radio" name="groupe" value="groupe3">Groupe3 <br><br>
+            <label for="carte">Numéro de carte d'étudiant: </label><input type="number" name="carte" placeholder="Numéro de carte d'étudiant?" min="1"><br><br>
+            <label for="option">Choisissez les options que vous désirez: </label>
+            <select name="option" id="option" required>
+            <option value="">---Choisissez une option</option>
+            <option value="J2ee">J2ee</option>
+            <option value="Android">Android</option>
+            <option value=".Net">.Net</option>
+            <option value="HTML5">HTML5</option>
+            <option value="Fles">Fles</option>
+                </select>
+                <br>
+            <label for="pirate">Texte de validité: </label><input type="text" pattern="[I][N][S][A][T][0-9]{4}" name="pirate" placeholder="[I][N][S][A][T][0-9]{4}">
+        </div>
+        <input type="submit" value="valider" class="bouton">
+        <input type="reset" value="réinitialiser" class="bouton">
+
+    </form>
+</body>
+</html>
